@@ -1,11 +1,12 @@
 import './App.scss';
+import chairData from './chair_images.json';
+import shoeData from './shoe_images.json';
 
 function App() {
+  console.log(shoeData.results)
   return (
     <div className="App">
-      <h1>Lee</h1>
-      <h2>Sarah</h2>
-      <h3>Mohsin</h3>
+      
     </div>
   );
 }
