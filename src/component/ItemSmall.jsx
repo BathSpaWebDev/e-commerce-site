@@ -1,9 +1,12 @@
 
-import chairData from '../chair_images.json';
 
-export const ItemSmall = () => {
-    const imageSmall = chairData.results[0].urls.small;
-    const imgAlt = chairData.results[0].alt_description;
+
+export const ItemSmall = ( {itemData} ) => {
+
+    console.log(itemData.urls.small);
+    console.log(itemData.alt_description);
+    const imageSmall = itemData.urls.small;
+    const imgAlt = itemData.alt_description;
     
     return (
         <div className='my-item-small'>

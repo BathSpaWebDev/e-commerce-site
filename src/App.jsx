@@ -8,7 +8,7 @@ function App() {
   console.log(chairData.results);
   return (
     <div className="App">
-      <ItemContainer/>
+      <ItemContainer chairData={chairData} shoeData={shoeData}/>
     </div>
   );
 }
