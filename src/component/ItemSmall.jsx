@@ -1,22 +1,9 @@
-import './ItemSmall.scss';
+
 import chairData from '../chair_images.json';
 
-function ItemContainer() {
-    return (
-        <div className='item-container'>
-            <ItemSmall/>
-            <ItemSmall/>
-            <ItemSmall/>
-            <ItemSmall/>
-            <ItemSmall/>
-        </div>
-    )
-}
-export default ItemContainer;
-
 export const ItemSmall = () => {
-    const imageSmall = (chairData.results[0].urls.small);
-    const imgAlt = (chairData.results[0].alt_description);
+    const imageSmall = chairData.results[0].urls.small;
+    const imgAlt = chairData.results[0].alt_description;
     
     return (
         <div className='my-item-small'>
