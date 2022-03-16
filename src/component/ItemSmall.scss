@@ -1,9 +1,11 @@
 .my-item-small {
     width: 250px;
     height: auto;
-    background-color: #D4DDEB;
     display: inline-block;
     border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #B3171C;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .item-price {
     text-align: right;
