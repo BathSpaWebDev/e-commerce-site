@@ -2,10 +2,10 @@
     width: 250px;
     height: auto;
     display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 3px;
     color: #FFFFFF;
-    background-color: #B3171C;
+    background-color: #99070c;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .item-price {
@@ -17,7 +17,7 @@
 
 .img-small {
     width: 90%;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .view-btn, .add-btn {
@@ -26,5 +26,5 @@
     margin-top: 5px;
     border: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 3px;
 }
