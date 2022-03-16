@@ -4,11 +4,9 @@ import shoeData from './shoe_images.json';
 import ItemContainer from './component/ItemContainer';
 
 function App() {
-  console.log(shoeData.results)
-  console.log(chairData.results);
   return (
     <div className="App">
-      <ItemContainer/>
+      <ItemContainer chairData={chairData} shoeData={shoeData}/>
     </div>
   );
 }

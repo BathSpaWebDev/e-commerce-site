@@ -1,15 +1,19 @@
 import './ItemSmall.scss';
 import { ItemSmall } from './ItemSmall';
 
-function ItemContainer() {
+function ItemContainer( {chairData, shoeData} ) {
+
     return (
-        <div className='item-container'>
-            <ItemSmall/>
-            <ItemSmall/>
-            <ItemSmall/>
-            <ItemSmall/>
-            <ItemSmall/>
-        </div>
+        <>
+    {chairData.results.map(item => {
+           return <div className='item-container'>
+                    <ItemSmall itemData={item}/>
+                  </div>
+           
+        
+    })
+    }
+        </>
     )
 }
 export default ItemContainer;
