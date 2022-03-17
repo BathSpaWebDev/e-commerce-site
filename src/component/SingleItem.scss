@@ -1,0 +1,23 @@
+
+.single-item-container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-item-box {
+    width: 60%;
+    height: 80%;
+    border: 1px solid gray;
+}
+.single-item-imag-box {
+   width: 90%;
+   height: 50%;
+   overflow: hidden;
+}
+.img-self {
+    width: 100%;
+   
+}
