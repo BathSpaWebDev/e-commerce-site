@@ -1,11 +1,11 @@
-import '../scss/component/NavBar.scss';
+import "../scss/component/NavBar.scss";
 
 export const NavBar = () => {
-    return (
-        <div className='nav-container'>
-            <nav className='nav-list'>
-                <a>Cart</a>
-            </nav>
-        </div>
-    )
-}
+  return (
+    <div className="nav-container">
+      <nav className="nav-list">
+        <a>Cart</a>
+      </nav>
+    </div>
+  );
+};

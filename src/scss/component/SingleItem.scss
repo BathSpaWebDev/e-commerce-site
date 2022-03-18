@@ -1,25 +1,24 @@
-@import '../variables/colors';
-@import '../variables/fonts';
+@import "../variables/colors";
+@import "../variables/fonts";
 
 .single-item-container {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .single-item-box {
-    width: 60%;
-    height: 80%;
-    border: 1px solid gray;
+  width: 60%;
+  height: 80%;
+  border: 1px solid $additionalMidGrey;
 }
 .single-item-imag-box {
-   width: 90%;
-   height: 50%;
-   overflow: hidden;
+  width: 90%;
+  height: 50%;
+  overflow: hidden;
 }
 .img-self {
-    width: 100%;
-   
+  width: 100%;
 }

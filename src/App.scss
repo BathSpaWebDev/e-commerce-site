@@ -1,16 +1,13 @@
-@import './scss/variables/colors';
-@import './scss/variables/fonts';
-@import './scss/component/ItemContainer.scss';
-@import './scss/component/ItemSmall.scss';
-@import './scss/component/NavBar.scss';
+@import "./scss/variables/colors";
+@import "./scss/variables/fonts";
+@import "./scss/component/ItemContainer.scss";
+@import "./scss/component/ItemSmall.scss";
+@import "./scss/component/NavBar.scss";
 
 body {
-  html {
   font-family: $font-openSans;
   background-color: $secondaryGrey;
-  }
 }
-  
 
 .App {
   display: flex;
@@ -18,5 +15,3 @@ body {
   justify-content: space-between;
   gap: 15px;
 }
-
-
