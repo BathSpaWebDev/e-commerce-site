@@ -1,13 +1,16 @@
-@import './sass/Colors';
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
-@import './component/ItemContainer.scss';
-@import './component/ItemSmall.scss';
-@import './component/NavBar.scss';
+@import './scss/variables/colors';
+@import './scss/variables/fonts';
+@import './scss/component/ItemContainer.scss';
+@import './scss/component/ItemSmall.scss';
+@import './scss/component/NavBar.scss';
 
-body, html {
-  font-family: "Open Sans", sans-serif;
-  background-color: #D4DDEB;
+body {
+  html {
+  font-family: $font-openSans;
+  background-color: $secondaryGrey;
+  }
 }
+  
 
 .App {
   display: flex;

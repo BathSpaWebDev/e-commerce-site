@@ -1,4 +1,4 @@
-import './ItemSmall.scss';
+import '../scss/component/ItemContainer.scss';
 import { ItemSmall } from './ItemSmall';
 
 function ItemContainer( {chairData, shoeData} ) {

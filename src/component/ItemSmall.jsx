@@ -1,4 +1,4 @@
-
+import '../scss/component/ItemSmall.scss'
 export const ItemSmall = ( {itemData} ) => {
 
     const imageSmall = itemData.urls.small;

@@ -1,4 +1,4 @@
-import './SingleItem.scss';
+import '../scss/component/SingleItem.scss';
 import { useState } from "react";
 
 
