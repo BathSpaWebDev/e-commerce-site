@@ -1,0 +1,11 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
+.item-container {
+  width: 250px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 35px;
+  justify-content: center;
+  color: $additionalWhite;
+}
