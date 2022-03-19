@@ -12,6 +12,10 @@ body {
 .App {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 15px;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  top: 100px;
+  z-index: 0;
 }

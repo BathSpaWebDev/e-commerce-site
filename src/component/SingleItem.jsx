@@ -1,11 +1,10 @@
 import "../scss/component/SingleItem.scss";
 import { useState } from "react";
 
-export const SingleItem = ({ singleData }) => {
+export const SingleItem = ({ singleData, i }) => {
   const [value, setValue] = useState();
 
-  const imgData = singleData.results;
-  console.log(imgData);
+  const itemData = singleData.results;
 
   function handleChange(e) {
     setValue(e.target.value);
@@ -17,16 +16,16 @@ export const SingleItem = ({ singleData }) => {
         <div className="single-item-imag-box">
           <img
             className="img-self"
-            src={imgData[0].urls.regular}
-            alt={imgData[0].alt_description}
+            src={itemData[i].urls.regular}
+            alt={itemData[i].alt_description}
           />
-          <a target="_blank" href={imgData[0].user.links.html}>
+          <a target="_blank" href={itemData[i].user.links.html}>
             Att
           </a>
         </div>
         <div className="detail-box">
-          <h3>Price: £0.00</h3>
-          <h3>A {imgData[0].alt_description}</h3>
+          <h3>Price: £{itemData[i].price}</h3>
+          <h3>A {itemData[i].productName}</h3>
           <div className="input-quantity">
             <label>Select Quantity:</label>
             <br />
