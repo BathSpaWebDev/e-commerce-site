@@ -1,5 +1,5 @@
 import "../scss/component/ItemSmall.scss";
-export const ItemSmall = ({ itemData, getIndex, index }) => {
+export const ItemSmall = ({ itemData, getIndex, index, reveilItem }) => {
   const imageSmall = itemData.urls.small;
   const productName = itemData.productName;
   const imgAlt = itemData.alt_description;
