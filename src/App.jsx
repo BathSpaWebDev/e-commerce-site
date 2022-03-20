@@ -4,14 +4,31 @@ import shoeData from './shoe_images.json';
 import ItemContainer from './component/ItemContainer';
 import { NavBar } from './component/NavBar';
 import { SingleItem } from './component/SingleItem';
+import { useState } from 'react';
 
 function App() {
+
+  const [itemIndex, updateIndex] = useState(0);
+  const [singleItemActive, isActive] = useState(false);
+
+
+  const getIndex = (e) => {
+    updateIndex(e.target.getAttribute("index"))
+    isActive(true)
+  }
+
+  const closeSinglePage = (e) => isActive(false)
+
+  console.log(singleItemActive)
+
   return (
-    <div className="App">
+    <>
       <NavBar/>
-      <ItemContainer chairData={chairData} shoeData={shoeData}/>
-      <SingleItem singleData={chairData}/>
+    <div className="App">
+      <ItemContainer getIndex={getIndex} chairData={chairData} shoeData={shoeData}/>
+      <SingleItem closePage={closeSinglePage} openPage={singleItemActive} i={itemIndex} singleData={chairData}/>
     </div>
+    </>
   );
 }
 

@@ -17,10 +17,16 @@
 .item-price {
   align-self: flex-end;
   margin: 0;
-  padding: 10px;
+  padding: 2px 5px;
+  background-color: $additionalWhite;
+  border-radius: 3px;
+  color: $additionalBlack;
+  margin-bottom: 15px;
 }
+
 .img-small {
-  width: 90%;
+  width: 100%;
+  height: auto;
   border-radius: 3px;
 }
 .img-box {
@@ -29,6 +35,8 @@
   overflow: hidden;
   position: relative;
   border-radius: 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .img-box a {
   position: absolute;
@@ -50,4 +58,18 @@
   border: none;
   font-weight: bold;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.img-title {
+  text-transform: uppercase;
+  background-color: $primaryRed;
+  color: $additionalWhite;
+  border: $additionalWhite 1px solid;
+  display: block;
+  width: 90%;
+  padding: 10px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing:0.1em;
 }

@@ -1,5 +1,5 @@
 import "../scss/component/ItemSmall.scss";
-export const ItemSmall = ({ itemData }) => {
+export const ItemSmall = ({ itemData, getIndex, index, reveilItem }) => {
   const imageSmall = itemData.urls.small;
   const productName = itemData.productName;
   const imgAlt = itemData.alt_description;
@@ -15,7 +15,7 @@ export const ItemSmall = ({ itemData }) => {
           Att
         </a>
       </div>
-      <button className="view-btn">Quick View</button>
+      <button className="view-btn" index={index} onClick={getIndex}>Quick View</button>
       <button className="add-btn">Add to Cart</button>
       <h3 className="img-title">A {productName}</h3>
     </div>

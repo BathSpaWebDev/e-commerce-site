@@ -2,23 +2,44 @@
 @import "../variables/fonts";
 
 .single-item-container {
+  position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
+  top: -10px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  right: -100vw;
+  background-color: rgba(173, 161, 161, 0.8);
 }
+
+.reveil {
+  right: 0vw;
+  transition: .8s ease-in-out;
+}
+
 .single-item-box {
   width: 60%;
   height: 80%;
   border: 1px solid $additionalMidGrey;
+  border-radius: 4px;
+  background-color: $primaryRed;
+  color: $additionalWhite;
 }
+
 .single-item-imag-box {
   width: 90%;
   height: 50%;
   overflow: hidden;
 }
+
 .img-self {
   width: 100%;
+}
+
+.close-page {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
 }
