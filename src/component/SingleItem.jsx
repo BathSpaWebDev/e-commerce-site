@@ -1,7 +1,7 @@
 import "../scss/component/SingleItem.scss";
 import { useState } from "react";
 
-export const SingleItem = ({ singleData, i }) => {
+export const SingleItem = ({ singleData, i, openPage, closePage }) => {
   const [value, setValue] = useState();
 
   const itemData = singleData.results;
@@ -11,7 +11,7 @@ export const SingleItem = ({ singleData, i }) => {
   }
 
   return (
-    <div className="single-item-container">
+    <div className={`single-item-container ${openPage ? `reveil` : null}`}>
       <div className="single-item-box">
         <div className="single-item-imag-box">
           <img
@@ -48,7 +48,7 @@ export const SingleItem = ({ singleData, i }) => {
             <p>
               <span>Description:</span>
             </p>
-            <p>
+            <p className='close-page' onClick={closePage} >
               Want to shop more? Go back to <span>Main Page</span>
             </p>
           </div>
