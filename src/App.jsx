@@ -9,7 +9,7 @@ import { useState } from 'react';
 function App() {
 
   const [itemIndex, updateIndex] = useState(0);
-  const [singleItemActive, isActive] = useState(true);
+  const [singleItemActive, isActive] = useState(false);
 
 
   const getIndex = (e) => {
