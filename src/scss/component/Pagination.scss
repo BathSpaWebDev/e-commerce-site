@@ -1,0 +1,10 @@
+.pagination-container {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.pagination-container li {
+    border: 1px solid gray;
+    padding: 20px;
+    cursor: pointer;
+}
