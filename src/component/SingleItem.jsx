@@ -1,7 +1,7 @@
 import "../scss/component/SingleItem.scss";
 import { useState } from "react";
 
-export const SingleItem = ({ singleData, i, openPage, closePage }) => {
+export const SingleItem = ({ singleData, i, openPage, closePage, addToCart }) => {
   const [value, setValue] = useState();
 
   const itemData = singleData.results;
@@ -38,7 +38,7 @@ export const SingleItem = ({ singleData, i, openPage, closePage }) => {
             <h5>Value:{value}</h5>
           </div>
           <div className="button-box">
-            <button>Add to Cart</button>
+            <button index={i} onClick={addToCart}>Add to Cart</button>
             <button>Save for Later</button>
           </div>
           <div className="description-box">
