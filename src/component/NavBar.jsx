@@ -1,10 +1,11 @@
 import "../scss/component/NavBar.scss";
+import Cart from "./Cart";
 
-export const NavBar = () => {
+export const NavBar = ({cart}) => {
   return (
     <div className="nav-container">
       <nav className="nav-list">
-        <a>Cart</a>
+        <Cart cart={cart}/>
       </nav>
     </div>
   );

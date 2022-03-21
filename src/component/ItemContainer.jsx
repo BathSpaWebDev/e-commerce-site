@@ -9,6 +9,13 @@ function ItemContainer({ chairData, getIndex, reveilItem, shoeData }) {
   const [page, setPage] = useState(0);
   const showPerPage = 8;
   const pageVisited = page * showPerPage;
+<<<<<<< HEAD
+=======
+  const totalData = chairData.results.length;
+  const handleChange = ({selected}) => {
+    setPage(selected);
+}
+>>>>>>> be55265450c2e9577aabed18df041f9b91ccb4e6
 
   const totalData = chairData.results.length;
 
