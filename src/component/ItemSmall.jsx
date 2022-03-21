@@ -17,7 +17,7 @@ export const ItemSmall = ({ itemData, getIndex, index, reveilItem }) => {
       </div>
       <button className="view-btn" index={index} onClick={getIndex}>Quick View</button>
       <button className="add-btn">Add to Cart</button>
-      <h3 className="img-title">A {productName}</h3>
+      <h3 className="img-title">{productName}</h3>
     </div>
   );
 };

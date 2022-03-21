@@ -1,0 +1,25 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
+.cart {
+
+    display: flex;
+    
+    a {
+        margin-right: 35px;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      
+      .cart-volume {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-right: 15px;
+        background-color: $additionalWhite;
+        color: $primary;
+        border-radius: 3px;
+        margin-right: 5px;
+        text-align: center;
+      }
+}
+
