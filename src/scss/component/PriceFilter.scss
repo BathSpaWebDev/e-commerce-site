@@ -1,0 +1,38 @@
+
+.filter-search {
+    width: 100vw;
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.search-box {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+.search-label {
+    font-size: 2rem;
+}
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.price-filter-container {
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+.price-filter {
+    font-size: 2rem;
+}
+.select-box {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.select-box option {
+    padding: 10px;
+}
+

@@ -11,6 +11,6 @@ export const Pagination = ({ show, totalData, handleChange }) => {
             pageCount={totalPage}
             onPageChange={handleChange}
             className={'pagination-container'}
-        />
+        /> 
     )
 }
