@@ -20,7 +20,6 @@ function ItemContainer({ chairData, getIndex, reveilItem, shoeData }) {
     const priceLowToHigh = chairData.results.sort((low, high) => {
         return low.price - high.price;
     });
-    console.log(priceLowToHigh);
     setPage(priceLowToHigh);
   }
  
@@ -28,7 +27,6 @@ function ItemContainer({ chairData, getIndex, reveilItem, shoeData }) {
     const priceHighToLow = chairData.results.sort((low, high) => {
         return high.price - low.price;
     });
-    console.log(priceHighToLow);
     setPage(priceHighToLow);
   }
   

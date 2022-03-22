@@ -25,7 +25,6 @@ function App() {
                 productName: chairData.results[newItem].productName,
                 price: chairData.results[newItem].price
               })
-    console.log(cart);
   }
 
   const getIndex = (e) => {
